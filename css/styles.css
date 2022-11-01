@@ -31,8 +31,7 @@ header {
   font-size: 26px;
   line-height: 1.17;
   text-decoration: none;
-  cursor: auto;
-  cursor:none;
+  /* cursor: default; */
 }
 .logo{
   margin:auto;
@@ -138,6 +137,7 @@ h2 {
   color: var(--list-font-color);
   font-size: 16px;
   line-height: 1.17;
+  margin-top:10px;
 }
 footer {
   background-color:var(--second-brand-color);
@@ -197,18 +197,7 @@ ul {
 .main-portfolio section {
   background-color: rgba(255, 255, 255, 1);
 }
-a:not(.webstudio){
-  cursor:pointer;
-}
-/* .webstudio:hover{
-  color: rgba(33, 150, 243, 1);
-} */
-.container{
-  max-width: 1200px;
-  padding: 0;
-  margin:0 auto;
-  width: 100%;
-}
+
 header li{
   display: inline;
 } 
@@ -282,13 +271,16 @@ padding-top:94px;
   background-color:rgba(255, 255, 255, 1);
  text-align: center;
  padding-bottom: 30px;
+ box-shadow: 0 2 1px 0px rgba(0, 0, 0, 0.2), inset 0 1 1px 0px rgba(0, 0, 0, 0.14);
+ border-bottom-left-radius:4px ;
+ border-bottom-right-radius:4px;
 }
 .footer-elements{
   padding-top:60px;
   padding-bottom: 60px;
   display:block;
-  margin-left: 215px;
-  margin-bottom:90px;
+  /* margin-left: 215px;
+  margin-bottom:90px; */
 }
 .footer-list{
   padding-left:0;
@@ -313,9 +305,12 @@ padding-top:94px;
 }
 .photo-block-portfolio{
   background-color:rgba(255, 255, 255, 1);
+  margin-bottom: 0;
 }
 header{
   border-bottom:solid #ECECEC 1px;
+  padding-bottom:24px ;
+  padding-top:24px ;
 }
 .header-links li:nth-child(1){
 margin-left: 93px;
@@ -333,19 +328,22 @@ margin-left: 93px;
   display:flex;
 }
 .photo-block-portfolio h3{
-  margin-top:20px;
   margin-left:24px;
-  margin-bottom:4px;
 }
 .photo-block-portfolio p{
   margin-left:24px;
   margin-bottom:20px;
+  padding-top: 4px;
 }
 .item li{
   flex-basis: calc((100% - 60px) / 3);
 }
-.item{
-  border: solid #EEEEEE 1px;
+.item-text{
+  border-bottom: solid #EEEEEE 1px;  
+  border-right:solid #EEEEEE 1px ;
+  border-left:solid #EEEEEE 1px ;
+  margin-top: -5px;
+  padding-top: 20px;
 }
 
 .logo-footer-style{
@@ -357,3 +355,6 @@ margin-left: 93px;
 .link-first{
   margin-bottom: 9px;
 }
+.team-portrait{
+  padding-bottom: 30px;
+ }
